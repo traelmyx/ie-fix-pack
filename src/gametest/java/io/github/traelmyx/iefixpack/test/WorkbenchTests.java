@@ -38,6 +38,8 @@ public class WorkbenchTests {
 		var player = new ServerPlayer(server, helper.getLevel(), cookie.gameProfile(), cookie.clientInformation());
 		var connection = new net.minecraft.network.Connection(net.minecraft.network.protocol.PacketFlow.SERVERBOUND);
 		new io.netty.channel.embedded.EmbeddedChannel(connection);
+		// there is no client to agree on mod channels with; let Immersive Engineering's sync packets through
+		net.neoforged.neoforge.network.registration.NetworkRegistry.configureMockConnection(connection);
 		server.getPlayerList().placeNewPlayer(connection, player, cookie);
 		player.setGameMode(GameType.SURVIVAL);
 		Vec3 at = helper.absoluteVec(new Vec3(1.5, 1, 1.5));
