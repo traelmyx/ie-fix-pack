@@ -5,6 +5,7 @@ Unofficial fixes for long-standing [Immersive Engineering](https://github.com/Bl
 | Switch | Issue | What it fixes |
 |---|---|---|
 | `workbenchNoQuickMoveDupe` | [#6393](https://github.com/BluSunrize/ImmersiveEngineering/issues/6393) | Shift-clicking a stack into the Engineer's Workbench dropped a copy of what didn't fit on the ground (item dupe). |
+| `toolboxNoShiftClickLoss` | [#6177](https://github.com/BluSunrize/ImmersiveEngineering/issues/6177) | Shift-clicking items onto a stack in a toolbox held in the hand lost them (or duplicated some). |
 
 Config: `config/ie_fix_pack.properties`. Fixes without a passing test start switched off.
 
