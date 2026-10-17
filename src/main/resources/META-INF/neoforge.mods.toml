@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/traelmyx/ie-fix-pack/issues"
+
+[[mods]]
+modId = "${id}"
+version = "${version}"
+displayName = "${name}"
+authors = "traelmyx"
+logoFile = "assets/ie_fix_pack/icon.png"
+displayTest = "IGNORE_ALL_VERSION"
+description = '''Unofficial fixes for long-standing Immersive Engineering bugs, including item dupes, each with its own switch. Not made by BluSunrize.'''
+
+[[mixins]]
+config = "ie_fix_pack.mixins.json"
+
+[[dependencies.${id}]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${id}]]
+modId = "immersiveengineering"
+type = "required"
+versionRange = "[12.4,)"
+ordering = "AFTER"
+side = "BOTH"

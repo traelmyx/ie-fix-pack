@@ -1,0 +1,12 @@
+{
+	"required": false,
+	"minVersion": "0.8",
+	"package": "io.github.traelmyx.iefixpack.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ModWorkbenchContainerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 0
+	}
+}
