@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+- Liquid concrete sources next to each other set like any other concrete (#6201).
+
 ## 1.0.0
 
 - Engineer's Workbench shift-click dupe fixed (#6393).
