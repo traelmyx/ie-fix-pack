@@ -31,6 +31,8 @@ public class IEFixPack {
 
 	public static final Fix WORKBENCH_NO_QUICK_MOVE_DUPE = fix("workbenchNoQuickMoveDupe", "6393", null,
 		"Shift-clicking a stack into the Engineer's Workbench no longer drops a copy of what didn't fit on the ground.");
+	public static final Fix TOOLBOX_NO_SHIFT_CLICK_LOSS = fix("toolboxNoShiftClickLoss", "6177", null,
+		"Shift-clicking items onto a stack in a toolbox held in your hand no longer loses or duplicates them.");
 
 	public static final class Fix {
 		public final String key, issue, description;
