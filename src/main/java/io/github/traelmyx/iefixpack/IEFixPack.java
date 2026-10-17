@@ -33,6 +33,8 @@ public class IEFixPack {
 		"Shift-clicking a stack into the Engineer's Workbench no longer drops a copy of what didn't fit on the ground.");
 	public static final Fix TOOLBOX_NO_SHIFT_CLICK_LOSS = fix("toolboxNoShiftClickLoss", "6177", null,
 		"Shift-clicking items onto a stack in a toolbox held in your hand no longer loses or duplicates them.");
+	public static final Fix CONCRETE_SOURCES_SET = fix("concreteSourcesSet", "6201", null,
+		"Liquid concrete sources next to each other set like any other concrete instead of staying liquid forever.");
 
 	public static final class Fix {
 		public final String key, issue, description;
